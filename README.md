@@ -26,8 +26,8 @@
 <table>
   <tr>
     <td width="96" align="center">
-      <!-- Put Sarv's official logo at assets/sarv-logo.png -->
-      <img src="./assets/sarv-logo.png" width="72" alt="Sarv"/>
+      <!-- Put Sarv's official logo at assets/sarv-logo.jpeg -->
+      <img src="./assets/sarv-logo.jpeg" width="72" alt="Sarv"/>
     </td>
     <td>
       <b><a href="https://crawl.sarv.com">SarvCrawl</a></b> is Sarv's web crawler.<br/>
@@ -54,10 +54,6 @@
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=sarvaman&show_icons=true&count_private=true&hide_border=true&bg_color=0E2A47&title_color=5CC8C8&icon_color=5CC8C8&text_color=ffffff"/>
   <img height="165" src="https://streak-stats.demolab.com?user=sarvaman&hide_border=true&background=0E2A47&ring=5CC8C8&fire=5CC8C8&currStreakLabel=5CC8C8&sideLabels=ffffff&currStreakNum=ffffff&sideNums=ffffff&dates=A9C7E3"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sarvaman&bg_color=0E2A47&color=ffffff&line=5CC8C8&point=ffffff&area=true&area_color=5CC8C8&hide_border=true" width="100%"/>
 </p>
 
 ## Contribution snake
