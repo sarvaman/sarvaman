@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="SarvCrawl - crawl.sarv.com">
+  <style>
+    .bg{fill:#0E2A47}
+    .edge{stroke:#2C5378;stroke-width:1.5;fill:none}
+    .trail{stroke:#5CC8C8;stroke-width:2.5;fill:none;stroke-dasharray:900;stroke-dashoffset:900;animation:crawl 6s ease-in-out infinite}
+    .node{fill:#16395E;stroke:#3E6E99;stroke-width:1.5}
+    .hit{fill:#5CC8C8;opacity:0;animation:hit 6s ease-in-out infinite}
+    .bot{fill:#FFFFFF}
+    .title{font:700 76px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif;fill:#FFFFFF;letter-spacing:-1px}
+    .sub{font:400 24px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif;fill:#A9C7E3}
+    .url{font:600 22px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif;fill:#5CC8C8}
+    .count{font:600 18px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#A9C7E3}
+    @keyframes crawl{0%{stroke-dashoffset:900}70%,100%{stroke-dashoffset:0}}
+    .h1{animation-name:h1}.h2{animation-name:h2}.h3{animation-name:h3}.h4{animation-name:h4}.h5{animation-name:h5}.h6{animation-name:h6}
+    @keyframes h1{0%,4%{opacity:0}6%,90%{opacity:1}100%{opacity:0}}
+    @keyframes h2{0%,16%{opacity:0}18%,90%{opacity:1}100%{opacity:0}}
+    @keyframes h3{0%,28%{opacity:0}30%,90%{opacity:1}100%{opacity:0}}
+    @keyframes h4{0%,40%{opacity:0}42%,90%{opacity:1}100%{opacity:0}}
+    @keyframes h5{0%,54%{opacity:0}56%,90%{opacity:1}100%{opacity:0}}
+    @keyframes h6{0%,68%{opacity:0}70%,90%{opacity:1}100%{opacity:0}}
+    .bot{offset-path:path('M760 70 L860 120 L820 200 L940 230 L1010 140 L1100 210 L1060 300');animation:move 6s ease-in-out infinite}
+    @keyframes move{0%{offset-distance:0%}70%,100%{offset-distance:100%}}
+    @media (prefers-reduced-motion:reduce){.trail{animation:none;stroke-dashoffset:0}.hit{animation:none;opacity:1}.bot{animation:none;offset-distance:100%}}
+  </style>
+  <rect class="bg" width="1200" height="360" rx="18"/>
+
+  <!-- the site graph -->
+  <g class="edges">
+    <path class="edge" d="M760 70 L860 120 L820 200 L940 230 L1010 140 L1100 210 L1060 300"/>
+    <path class="edge" d="M860 120 L1010 140 M760 70 L700 180 L820 200 M940 230 L900 310 M1010 140 L1120 80 M700 180 L740 290 L900 310"/>
+  </g>
+  <path class="trail" d="M760 70 L860 120 L820 200 L940 230 L1010 140 L1100 210 L1060 300"/>
+
+  <g>
+    <circle class="node" cx="760" cy="70" r="12"/><circle class="node" cx="860" cy="120" r="12"/>
+    <circle class="node" cx="820" cy="200" r="12"/><circle class="node" cx="940" cy="230" r="12"/>
+    <circle class="node" cx="1010" cy="140" r="12"/><circle class="node" cx="1100" cy="210" r="12"/>
+    <circle class="node" cx="1060" cy="300" r="12"/><circle class="node" cx="700" cy="180" r="9"/>
+    <circle class="node" cx="740" cy="290" r="9"/><circle class="node" cx="900" cy="310" r="9"/>
+    <circle class="node" cx="1120" cy="80" r="9"/>
+  </g>
+  <g>
+    <circle class="hit h1" cx="860" cy="120" r="7"/><circle class="hit h2" cx="820" cy="200" r="7"/>
+    <circle class="hit h3" cx="940" cy="230" r="7"/><circle class="hit h4" cx="1010" cy="140" r="7"/>
+    <circle class="hit h5" cx="1100" cy="210" r="7"/><circle class="hit h6" cx="1060" cy="300" r="7"/>
+  </g>
+  <circle class="bot" r="6"/>
+
+  <!-- words -->
+  <text class="title" x="64" y="170">SarvCrawl</text>
+  <text class="sub" x="66" y="214">Crawls the web, page by page, so your data is always fresh.</text>
+  <text class="url" x="66" y="270">crawl.sarv.com</text>
+</svg>
